@@ -8,7 +8,7 @@ The goal of this project is to help you understand how to use CSS for dynamic UI
 
 ## Tooltip Mockup
 
-![Tooltip Mockup](./images/tooltip-mockup.svg)
+![Tooltip Mockup](./images/tooltip-mockup.png)
 
 ## Features
 
