@@ -1,0 +1,44 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2" rx="8"/>
+
+  <!-- Tooltip -->
+  <g transform="translate(450, 50)">
+    <!-- Tooltip box -->
+    <rect x="0" y="0" width="300" height="80" fill="#2c3e50" rx="8" opacity="0.95"/>
+    <!-- Tooltip text -->
+    <text x="150" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="normal">Here is everything I have built</text>
+    <!-- Tooltip arrow -->
+    <polygon points="140,80 150,95 160,80" fill="#2c3e50" opacity="0.95"/>
+  </g>
+
+  <!-- Arrow pointing to tooltip -->
+  <g transform="translate(350, 120)">
+    <path d="M 0 50 Q 50 0 120 30" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Navigation items -->
+  <g transform="translate(450, 250)">
+    <!-- Home (hovered) -->
+    <text x="0" y="30" fill="#2c3e50" font-family="Arial, sans-serif" font-size="24" font-weight="500">Home</text>
+    <!-- Dot separator -->
+    <circle cx="100" cy="22" r="3" fill="#bdc3c7"/>
+    <!-- Projects -->
+    <text x="130" y="30" fill="#7f8c8d" font-family="Arial, sans-serif" font-size="24" font-weight="400">Projects</text>
+    <!-- Dot separator -->
+    <circle cx="250" cy="22" r="3" fill="#bdc3c7"/>
+    <!-- Blog -->
+    <text x="280" y="30" fill="#7f8c8d" font-family="Arial, sans-serif" font-size="24" font-weight="400">Blog</text>
+  </g>
+
+  <!-- Description text -->
+  <text x="50" y="150" fill="#2c3e50" font-family="Arial, sans-serif" font-size="18" font-weight="500">CSS Only Tooltip to appear</text>
+  <text x="50" y="180" fill="#2c3e50" font-family="Arial, sans-serif" font-size="18" font-weight="500">above the item on hover.</text>
+</svg>
