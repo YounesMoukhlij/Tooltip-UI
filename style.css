@@ -1,0 +1,140 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+
+.container
+{
+    height: 20%;
+    width: 60%;
+
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    gap: -10px;
+    position: relative;
+}
+
+.input
+{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    height: 50%;
+    width: 60%;
+}
+
+span
+{
+    font-weight: 400;
+    font-size: xx-large;
+
+    border: 3px solid black;
+    border-radius: 15px;
+
+    color: white;
+    background-color: black;
+
+    cursor: pointer;
+
+    padding: 12px;
+    height: 90%;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+span:hover
+{
+    color: black;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+
+span:hover + .message
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+.message::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    transform: translateX(-60%);
+    border: 15px solid transparent;
+    border-top-color: #000000;
+}
+
+.message
+{
+    display: flex;
+    justify-content: center;
+
+    padding-top: 40px;
+    z-index: 1000;
+    opacity: 0;
+
+    position: absolute;
+    visibility: hidden;
+
+    background-color: black;
+    color: white;
+
+    box-shadow:  1px 1px 4px rgb(84, 83, 84);
+    border-radius: 10px;
+
+    top: -160%;
+    left: 1%;
+
+    margin: 10px;
+    padding: 20px;
+
+    font-size: larger;
+    font-weight: 500;
+
+    height: 110%;
+    width: 90%;
+
+    /* Add transition for smooth animation */
+    transition: all 0.3s ease;
+}
+
+
